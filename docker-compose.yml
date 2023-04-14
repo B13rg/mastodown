@@ -1,0 +1,7 @@
+version: 3.8
+
+services:
+  mastodown:
+    image: ghcr.io/b13rg/mastodown:main
+    volumes:
+      - ./data:/data
