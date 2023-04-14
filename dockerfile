@@ -10,6 +10,8 @@ WORKDIR /data
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+COPY crontab /etc/crontab
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 # source: `docker run --rm -it alpine  crond -h`
