@@ -10,7 +10,7 @@ WORKDIR /data
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-COPY crontab /etc/crontab
+COPY crontab /etc/crontabs/crontab
 
 ENTRYPOINT ["/entrypoint.sh"]
 
